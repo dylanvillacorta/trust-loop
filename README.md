@@ -6,7 +6,7 @@ Software educativo de escritorio para ejercitar la toma de decisiones en situaci
 
 TrustLoop propone partidas breves en las que el estudiante juega varias rondas con compañeros virtuales. En cada ronda decide entre **cooperar** o **protegerse**, y los puntos que obtienen ambos dependen de lo que eligieron los dos.
 
-Cada compañero responde según un estilo propio —hay quien coopera siempre, quien responde como lo tratan, quien cambia sin un patrón claro, entre otros— y el estudiante debe descubrirlo observando cómo juega. Durante la partida solo se muestra el resultado de cada ronda; al terminar, una retroalimentación revela el estilo de cada compañero y ayuda a reflexionar sobre las decisiones tomadas, el nivel de cooperación, la respuesta ante una traición y el puntaje individual y grupal.
+Cada compañero responde según un estilo propio —hay quien coopera siempre, quien devuelve lo que recibe, quien a veces traiciona y, en el bloque avanzado, quien cambia de estilo a mitad del encuentro— y el estudiante debe descubrirlo observando cómo juega. Antes y después de cada partida, el estudiante indica brevemente su estado de ánimo y su nivel de estrés. Durante la partida solo se muestra el resultado de cada ronda; al terminar, una retroalimentación revela el estilo de cada compañero y ayuda a reflexionar sobre las decisiones tomadas, el nivel de cooperación, la respuesta ante una traición y el puntaje individual y grupal.
 
 ## Para quién es
 

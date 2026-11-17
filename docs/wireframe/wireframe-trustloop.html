@@ -466,7 +466,7 @@
 <header class="doc-header">
   <span class="tag-cat">Toma de decisiones · Cooperación · Ajuste a los demás</span>
   <h1>TrustLoop</h1>
-  <p>El estudiante juega rondas con compañeros virtuales y en cada una decide entre cooperar o protegerse. Cada compañero responde con un estilo propio que hay que descubrir; durante la partida solo se ve el resultado de cada ronda y al final llega la retroalimentación.</p>
+  <p>El estudiante juega rondas con compañeros virtuales y en cada una decide entre cooperar o protegerse. Cada compañero responde con un estilo propio que hay que descubrir; antes y después de cada partida indica cómo se siente; durante la partida solo se ve el resultado de cada ronda y al final llega la retroalimentación.</p>
   <div class="scope-header">
     <strong>Aviso de alcance:</strong> herramienta de práctica y reflexión; no es una prueba psicológica ni mide la personalidad, y nunca califica al estudiante como egoísta o ingenuo. Los datos quedan solo en este equipo, por perfil, sin internet.
   </div>
@@ -483,10 +483,10 @@
         <ol class="elements" style="padding-left:18px;">
           <li>Logo de TrustLoop, incluido el ícono de la app.</li>
           <li>Pantalla de carga con el logo.</li>
-          <li>Todas las pantallas: Selección de perfil, Menú principal, Guía rápida, Ajustes, Ver avance, Partida y Retroalimentación.</li>
-          <li>Los cinco compañeros ilustrados (Alba, Bruno, Clara, Darío y Eva), con una pose neutra que no delate su estilo.</li>
+          <li>Todas las pantallas: Selección de perfil, Menú principal, Guía rápida, Ajustes, Ver avance, Autorreporte inicial y final, Partida y Retroalimentación.</li>
+          <li>Los seis compañeros ilustrados (Alba, Bruno, Clara, Darío, Eva y Fabián), con una pose neutra que no delate su estilo.</li>
           <li>La pantalla central de juego: los botones Cooperar y Protegerme, el historial del encuentro, la tabla de puntos y los cuatro avisos de resultado de la ronda.</li>
-          <li>Los componentes: botones, campos, interruptores, tarjetas, tablas, diálogos y avisos.</li>
+          <li>Los componentes: botones, campos, escalas del 1 al 5, interruptores, tarjetas, tablas, diálogos y avisos.</li>
           <li>El estilo general: colores, tipografía e íconos (incluidos los de cooperar y protegerse).</li>
           <li>Las versiones de alto contraste y texto grande de todo lo anterior.</li>
         </ol>
@@ -498,21 +498,21 @@
       <div class="screen-body">
         <p class="strong" style="margin:0; font-size:0.84rem;">Lo que no es interfaz (no se dibuja)</p>
         <ol class="elements" style="padding-left:18px;">
-          <li>Los cinco estilos de juego: Recíproco, Siempre coopera, Siempre se protege, Impredecible y Rencoroso.</li>
-          <li>El sorteo de cada partida: orden de los compañeros y qué estilo le toca a cada uno.</li>
-          <li>La tabla de puntos de cada ronda y el cálculo de puntaje individual, puntaje grupal, cooperación y respuesta ante una traición.</li>
+          <li>Los seis estilos de juego en dos bloques: Siempre coopera, Recíproco y Oportunista (base); Rencoroso, Impredecible y Cambiante (avanzado).</li>
+          <li>El sorteo de cada partida: orden de los compañeros dentro de cada bloque y qué estilo le toca a cada uno.</li>
+          <li>La tabla de puntos de cada ronda y el cálculo de puntaje individual, puntaje grupal, cooperación, confianza con quien coopera, respuesta ante una traición y estilos identificados.</li>
           <li>Los mensajes de retroalimentación, escritos con tono formativo y elegidos según lo que pasó en la partida.</li>
         </ol>
         <p class="strong" style="margin:0; font-size:0.84rem;">Hacer que todo funcione</p>
         <ol class="elements" style="padding-left:18px;">
           <li>Armar en la app las pantallas que entrega el diseñador y conectar el paso de una pantalla a otra.</li>
           <li>La ronda: registrar la decisión, calcular la del compañero según su estilo y mostrar el resultado.</li>
-          <li>El contenido de la partida: cinco compañeros, seis rondas con cada uno, la guía y los textos de cada estilo. Lo valida el docente.</li>
-          <li>Los perfiles y el guardado en la PC: crear y eliminar perfiles, guardar cada ronda y retomar una partida a medias.</li>
+          <li>El contenido de la partida: seis compañeros en dos bloques (seis y cinco rondas), la guía y los textos de cada estilo. Lo valida el docente.</li>
+          <li>Los perfiles y el guardado en la PC: crear y eliminar perfiles, guardar los autorreportes y cada ronda, y retomar una partida a medias.</li>
           <li>Calcular y mostrar los resultados en Retroalimentación y en Ver avance.</li>
           <li>Que los ajustes funcionen: alto contraste, texto grande, reducir movimiento y sonido.</li>
           <li>Los efectos de sonido.</li>
-          <li>Los textos de la interfaz: preguntas, avisos de resultado, guía y mensajes.</li>
+          <li>Los textos de la interfaz: preguntas, escalas, avisos de resultado, guía y mensajes.</li>
           <li>Probar todo y preparar la app para instalarla en Windows y usarla sin internet.</li>
         </ol>
       </div>
@@ -642,7 +642,7 @@
           <div class="box" data-wf-label="REGION · MENU EN FILA DE ICONOS · BOTONES CUADRADOS">
             <div class="menu-brand"><div class="menu-brand-box">TrustLoop</div></div>
             <div class="menu-icon-row">
-              <div class="menu-icon-item"><div class="menu-icon-btn is-featured"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Continuar</span><span class="menu-icon-sub">Compañero 3 de 5<br>Ronda 4</span></div>
+              <div class="menu-icon-item"><div class="menu-icon-btn is-featured"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Continuar</span><span class="menu-icon-sub">Compañero 3 de 6<br>Ronda 4</span></div>
               <div class="menu-icon-item"><div class="menu-icon-btn"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Jugar</span></div>
               <div class="menu-icon-item"><div class="menu-icon-btn"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Ver avance</span></div>
               <div class="menu-icon-item"><div class="menu-icon-btn"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Ajustes</span></div>
@@ -659,7 +659,7 @@
       <div class="screen-body">
         <ul class="elements">
           <li>Sin nada para retomar, Continuar no aparece y la fila queda con tres botones.</li>
-          <li>Jugar abre la Guía rápida la primera vez; después empieza la partida directamente.</li>
+          <li>Jugar abre la Guía rápida la primera vez; después va directo al Autorreporte inicial.</li>
         </ul>
         <div class="wf-canvas">
           <div class="top-nav-row">
@@ -752,7 +752,7 @@
       <div class="screen-head"><span>Ver avance</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
       <div class="screen-body">
         <ul class="elements">
-          <li>Historial del perfil activo: una fila por partida, la más reciente arriba.</li>
+          <li>Historial del perfil activo: una fila por partida, la más reciente arriba, con la variación de ánimo y estrés del autorreporte.</li>
           <li>Lo que aún no se jugó o no aplica se muestra con guion.</li>
           <li>Elegir una fila (clic, <kbd>Enter</kbd> o <kbd>Espacio</kbd>) abre su detalle. Solo en pantalla, sin archivos.</li>
         </ul>
@@ -763,11 +763,11 @@
           </div>
           <div class="box" data-wf-label="TABLA · PARTIDAS DEL PERFIL" style="padding-left:0; padding-right:0; padding-bottom:0;">
             <table>
-              <thead><tr><th>Fecha</th><th>Estado</th><th>Individual</th><th>Grupal</th><th>Cooperación</th><th>Tras una traición</th><th>Estilos</th></tr></thead>
+              <thead><tr><th>Fecha</th><th>Estado</th><th>Individual</th><th>Grupal</th><th>Cooperación</th><th>Tras una traición</th><th>Estilos</th><th>Ánimo</th><th>Estrés</th></tr></thead>
               <tbody>
-                <tr><td class="mono">17 nov · 09:40</td><td><span class="tag">EN CURSO</span></td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td></tr>
-                <tr class="row-selected"><td class="mono">16 nov · 10:15</td><td><span class="tag tag-dark">COMPLETADA</span></td><td class="mono">68</td><td class="mono">141 / 180</td><td class="mono">63 %</td><td class="mono">cooperó 2 de 4</td><td class="mono">3 de 5</td></tr>
-                <tr><td class="mono">12 nov · 11:00</td><td><span class="tag tag-dark">COMPLETADA</span></td><td class="mono">69</td><td class="mono">112 / 180</td><td class="mono">40 %</td><td class="mono">cooperó 0 de 3</td><td class="mono">2 de 5</td></tr>
+                <tr><td class="mono">17 nov · 09:40</td><td><span class="tag">EN CURSO</span></td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">—</td><td class="mono">3→—</td><td class="mono">2→—</td></tr>
+                <tr class="row-selected"><td class="mono">16 nov · 10:15</td><td><span class="tag tag-dark">COMPLETADA</span></td><td class="mono">79</td><td class="mono">165 / 198</td><td class="mono">73 %</td><td class="mono">cooperó 2 de 5</td><td class="mono">4 de 6</td><td class="mono">3→4</td><td class="mono">3→2</td></tr>
+                <tr><td class="mono">12 nov · 11:00</td><td><span class="tag tag-dark">COMPLETADA</span></td><td class="mono">66</td><td class="mono">140 / 198</td><td class="mono">45 %</td><td class="mono">cooperó 0 de 3</td><td class="mono">3 de 6</td><td class="mono">3→3</td><td class="mono">4→3</td></tr>
               </tbody>
             </table>
           </div>
@@ -780,7 +780,7 @@
       <div class="screen-head"><span>Ver avance · detalle de una partida</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
       <div class="screen-body">
         <ul class="elements">
-          <li>Por compañero: estilo real, el que supuso el estudiante, su cooperación y los puntos de ambos.</li>
+          <li>Por compañero: bloque, estilo real, el que supuso el estudiante, su cooperación y los puntos de ambos.</li>
           <li>Botón para abrir la retroalimentación completa de esa partida.</li>
         </ul>
         <div class="wf-canvas">
@@ -790,14 +790,15 @@
           </div>
           <div class="box" data-wf-label="TABLA · DETALLE POR COMPAÑERO · DATOS SIMULADOS" style="padding-left:0; padding-right:0; padding-bottom:0;">
             <table>
-              <thead><tr><th>Compañero</th><th>Estilo</th><th>Supusiste</th><th>Cooperaste</th><th>Tú</th><th>Él o ella</th></tr></thead>
+              <thead><tr><th>Bloque</th><th>Compañero</th><th>Estilo</th><th>Supusiste</th><th>Cooperaste</th><th>Tú</th><th>Él o ella</th></tr></thead>
               <tbody>
-                <tr><td>Clara</td><td>Recíproco</td><td><span class="tag tag-dark">Recíproco · coincide</span></td><td class="mono">5 de 6</td><td class="mono">17</td><td class="mono">17</td></tr>
-                <tr><td>Alba</td><td>Siempre se protege</td><td><span class="tag tag-dark">Siempre se protege · coincide</span></td><td class="mono">2 de 6</td><td class="mono">4</td><td class="mono">14</td></tr>
-                <tr><td>Eva</td><td>Impredecible</td><td><span class="tag tag-double">Rencoroso · no coincide</span></td><td class="mono">3 de 6</td><td class="mono">13</td><td class="mono">13</td></tr>
-                <tr><td>Bruno</td><td>Siempre coopera</td><td><span class="tag tag-dark">Siempre coopera · coincide</span></td><td class="mono">6 de 6</td><td class="mono">18</td><td class="mono">18</td></tr>
-                <tr><td>Darío</td><td>Rencoroso</td><td><span class="tag tag-grey">No estoy seguro</span></td><td class="mono">3 de 6</td><td class="mono">16</td><td class="mono">11</td></tr>
-              </tbody>
+<tr><td class="mono">1</td><td>Clara</td><td>Recíproco</td><td><span class="tag tag-dark">Recíproco · coincide</span></td><td class="mono">5 de 6</td><td class="mono">17</td><td class="mono">17</td></tr>
+<tr><td class="mono">1</td><td>Bruno</td><td>Siempre coopera</td><td><span class="tag tag-dark">Siempre coopera · coincide</span></td><td class="mono">6 de 6</td><td class="mono">18</td><td class="mono">18</td></tr>
+<tr><td class="mono">1</td><td>Alba</td><td>Oportunista</td><td><span class="tag tag-double">Impredecible · no coincide</span></td><td class="mono">5 de 6</td><td class="mono">14</td><td class="mono">19</td></tr>
+<tr><td class="mono">2</td><td>Eva</td><td>Impredecible</td><td><span class="tag tag-grey">No estoy seguro</span></td><td class="mono">3 de 5</td><td class="mono">9</td><td class="mono">11</td></tr>
+<tr><td class="mono">2</td><td>Darío</td><td>Rencoroso</td><td><span class="tag tag-dark">Rencoroso · coincide</span></td><td class="mono">2 de 5</td><td class="mono">13</td><td class="mono">8</td></tr>
+<tr><td class="mono">2</td><td>Fabián</td><td>Cambiante</td><td><span class="tag tag-dark">Cambiante · coincide</span></td><td class="mono">3 de 5</td><td class="mono">8</td><td class="mono">13</td></tr>
+</tbody>
             </table>
           </div>
         </div>
@@ -807,11 +808,12 @@
   </div>
 
   <!-- BLOQUE 3 -->
-  <div class="section-title">3 · Guía rápida y partida nueva</div>
+  <div class="section-title">3 · Guía rápida, partida nueva y autorreporte inicial</div>
   <div class="flow">
     <div class="step">Paso 1 · Cooperar o protegerte</div><div class="arrow">→</div>
     <div class="step">Paso 2 · Cada compañero tiene su estilo</div><div class="arrow">→</div>
-    <div class="step">Paso 3 · La retroalimentación llega al final</div><div class="arrow">→</div>
+    <div class="step">Paso 3 · Cómo te sientes y retroalimentación</div><div class="arrow">→</div>
+    <div class="step">Autorreporte inicial</div><div class="arrow">→</div>
     <div class="step">Partida</div>
   </div>
 
@@ -847,18 +849,19 @@
       <div class="screen-body">
         <ul class="elements">
           <li>Cada compañero juega con un estilo propio que no se dice.</li>
-          <li>Al final de cada encuentro se elige qué estilo parecía tener.</li>
+          <li>Dos bloques: el segundo con menos rondas y estilos más difíciles. Al final de cada encuentro se elige qué estilo parecía tener.</li>
         </ul>
         <div class="wf-canvas">
           <div class="top-nav-row"><span class="btn">← Volver al menú</span><span class="pill">Paso 2 de 3</span></div>
-          <div style="display:grid; grid-template-columns:repeat(5, minmax(0,1fr)); gap:6px;" data-wf-label="ILUSTRACIONES · CINCO COMPAÑEROS">
+          <div style="display:grid; grid-template-columns:repeat(6, minmax(0,1fr)); gap:6px;" data-wf-label="ILUSTRACIONES · SEIS COMPAÑEROS">
             <div class="illus" style="height:64px;">ALBA</div>
             <div class="illus" style="height:64px;">BRUNO</div>
             <div class="illus" style="height:64px;">CLARA</div>
             <div class="illus" style="height:64px;">DARÍO</div>
             <div class="illus" style="height:64px;">EVA</div>
+            <div class="illus" style="height:64px;">FABIÁN</div>
           </div>
-          <div class="strong" style="font-size:0.9rem;">Jugarás 6 rondas con cada uno. Observa cómo responde a lo que haces: descubrir su estilo te ayudará a decidir.</div>
+          <div class="strong" style="font-size:0.9rem;">Bloque 1: tres compañeros, 6 rondas con cada uno. Bloque 2: otros tres, 5 rondas y estilos más difíciles; alguno puede cambiar a mitad del encuentro. Observa cómo responde a lo que haces.</div>
           <div class="actions-row"><span class="btn">Omitir</span><span style="display:flex; gap:8px;"><span class="btn">Anterior</span><span class="btn btn-primary">Siguiente</span></span></div>
         </div>
       </div>
@@ -869,21 +872,22 @@
       <div class="screen-head"><span>Guía rápida · Paso 3 de 3</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
       <div class="screen-body">
         <ul class="elements">
-          <li>Durante la partida solo verás el resultado de cada ronda.</li>
+          <li>Antes y después de jugar respondes cómo te sientes. Durante la partida solo verás el resultado de cada ronda.</li>
           <li>Al terminar, la retroalimentación revela los estilos y resume tus decisiones.</li>
         </ul>
         <div class="wf-canvas">
           <div class="top-nav-row"><span class="btn">← Volver al menú</span><span class="pill">Paso 3 de 3</span></div>
           <div class="metrics-grid" style="grid-template-columns:minmax(0,1fr);">
+            <div class="metric-card"><div class="metric-label">Antes</div><div class="strong" style="font-size:0.82rem;">¿Cómo te sientes?</div></div>
             <div class="metric-card"><div class="metric-label">Durante</div><div class="strong" style="font-size:0.82rem;">Resultado de la ronda</div></div>
             <div class="metric-card"><div class="metric-label">Fin de encuentro</div><div class="strong" style="font-size:0.82rem;">¿Qué estilo tenía?</div></div>
-            <div class="metric-card"><div class="metric-label">Al final</div><div class="strong" style="font-size:0.82rem;">Retroalimentación</div></div>
+            <div class="metric-card"><div class="metric-label">Al final</div><div class="strong" style="font-size:0.82rem;">¿Cómo te sientes? y retroalimentación</div></div>
           </div>
           <div class="small muted">No hay respuestas buenas o malas: cada decisión tiene consecuencias distintas según con quién juegas.</div>
           <div class="actions-row"><span class="btn">Anterior</span><span class="btn btn-primary">Empezar a jugar <kbd>Enter</kbd></span></div>
         </div>
       </div>
-      <div class="screen-note"><strong>Propósito:</strong> fijar la expectativa sobre cuándo llega la retroalimentación. <strong>Regla:</strong> al terminar u omitir la primera vez, queda registrado que el perfil ya la vio; desde Ajustes vuelve a Ajustes.</div>
+      <div class="screen-note"><strong>Propósito:</strong> fijar la expectativa sobre cuándo llega la retroalimentación. <strong>Regla:</strong> al terminar u omitir la primera vez, queda registrado que el perfil ya la vio y pasa al Autorreporte inicial; desde Ajustes vuelve a Ajustes.</div>
     </article>
   </div>
 
@@ -894,12 +898,12 @@
         <ul class="elements">
           <li>Aparece al pulsar Jugar si hay una partida a medias.</li>
           <li>Mantiene el foco dentro y se cierra con <kbd>Escape</kbd>.</li>
-          <li>Confirmar descarta la partida a medias y empieza una nueva; las completadas se conservan.</li>
+          <li>Confirmar descarta la partida a medias y abre el Autorreporte inicial de una nueva; las completadas se conservan.</li>
         </ul>
         <div class="wf-canvas">
           <div class="dialog-mock" data-wf-label="DIALOGO · CONFIRMACION">
             <div class="strong" style="font-size:0.95rem; margin-bottom:6px;">Empezar una partida nueva</div>
-            <div class="muted" style="font-size:0.82rem; margin-bottom:14px;">Tienes una partida a medias (compañero 3 de 5). Si empiezas una nueva, esa partida se descartará. Las partidas completadas no se tocan.</div>
+            <div class="muted" style="font-size:0.82rem; margin-bottom:14px;">Tienes una partida a medias (compañero 3 de 6). Si empiezas una nueva, esa partida se descartará. Las partidas completadas no se tocan.</div>
             <div class="actions-row">
               <div class="btn" data-wf-label="BOTON · SECUNDARIO">Cancelar</div>
               <div class="btn btn-primary" data-wf-label="BOTON · PRIMARIO">Descartar y empezar</div>
@@ -911,7 +915,49 @@
     </article>
 
     <article class="screen">
-      <div class="screen-head"><span>Partida · presentación del compañero</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+      <div class="screen-head"><span>Autorreporte inicial</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+      <div class="screen-body">
+        <ul class="elements">
+          <li>Antes de la partida: estado de ánimo y nivel de estrés o frustración, del 1 al 5.</li>
+          <li>Ambas son obligatorias; Empezar partida se habilita al responderlas. Teclas <kbd>1</kbd> a <kbd>5</kbd> y <kbd>Enter</kbd>.</li>
+          <li>Volver al menú no crea la partida.</li>
+        </ul>
+        <div class="wf-canvas">
+          <div class="strong">Antes de empezar, ¿cómo te sientes?</div>
+          <div class="region-box" data-wf-label="ESCALA 1-5">
+            <div class="strong" style="font-size:0.82rem;">Estado de ánimo</div>
+            <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin:6px 0 4px;"><div class="btn">1</div><div class="btn">2</div><div class="btn btn-primary">3</div><div class="btn">4</div><div class="btn">5</div></div>
+            <div class="top-nav-row small muted"><span>1 · Muy bajo</span><span>5 · Muy bueno</span></div>
+          </div>
+          <div class="region-box" data-wf-label="ESCALA 1-5">
+            <div class="strong" style="font-size:0.82rem;">Nivel de estrés o frustración</div>
+            <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin:6px 0 4px;"><div class="btn">1</div><div class="btn">2</div><div class="btn btn-primary">3</div><div class="btn">4</div><div class="btn">5</div></div>
+            <div class="top-nav-row small muted"><span>1 · Muy tranquilo</span><span>5 · Muy tenso</span></div>
+          </div>
+          <div class="actions-row">
+            <span class="btn" data-wf-label="BOTON · SECUNDARIO">Volver al menú</span>
+            <span class="btn btn-primary" data-wf-label="BOTON · PRIMARIO">Empezar partida <kbd>Enter</kbd></span>
+          </div>
+        </div>
+      </div>
+      <div class="screen-note"><strong>Propósito:</strong> que el estudiante vea luego cómo se relaciona su estado con lo que pasó en la partida. <strong>Registra:</strong> ánimo y estrés iniciales; crea la partida y la guarda.</div>
+    </article>
+  </div>
+
+  <!-- BLOQUE 4 -->
+  <div class="section-title">4 · Partida · ronda</div>
+  <div class="flow">
+    <div class="step">Presentación del compañero</div><div class="arrow">→</div>
+    <div class="step">Decisión</div><div class="arrow">→</div>
+    <div class="step">Resultado de la ronda</div><div class="arrow">→</div>
+    <div class="step">× 6 rondas (Bloque 1) o 5 (Bloque 2)</div><div class="arrow">→</div>
+    <div class="step">¿Qué estilo tenía?</div><div class="arrow">→</div>
+    <div class="step">Siguiente compañero (× 6, en dos bloques)</div>
+  </div>
+
+  <div class="row2">
+    <article class="screen">
+      <div class="screen-head"><span>Partida · presentación del compañero (Bloque 1)</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
       <div class="screen-body">
         <ul class="elements">
           <li>Abre cada encuentro: quién es el compañero y cuántas rondas se juegan.</li>
@@ -919,7 +965,7 @@
         </ul>
         <div class="wf-canvas">
           <div class="game-hud" data-wf-label="REGION · ENCABEZADO DE PARTIDA">
-            <span class="pill">Compañero 2 de 5</span>
+            <span class="pill">Bloque 1 · Base · Compañero 2 de 6</span>
             <span class="btn">Pausar y salir al menú</span>
           </div>
           <div class="stage">
@@ -932,17 +978,29 @@
       </div>
       <div class="screen-note"><strong>Propósito:</strong> marcar el cambio de compañero para que no se mezclen las observaciones. <strong>Regla:</strong> el orden y el estilo de cada compañero se sortean al crear la partida.</div>
     </article>
-  </div>
 
-  <!-- BLOQUE 4 -->
-  <div class="section-title">4 · Partida · ronda</div>
-  <div class="flow">
-    <div class="step">Presentación del compañero</div><div class="arrow">→</div>
-    <div class="step">Decisión</div><div class="arrow">→</div>
-    <div class="step">Resultado de la ronda</div><div class="arrow">→</div>
-    <div class="step">× 6 rondas</div><div class="arrow">→</div>
-    <div class="step">¿Qué estilo tenía?</div><div class="arrow">→</div>
-    <div class="step">Siguiente compañero (× 5)</div>
+    <article class="screen">
+      <div class="screen-head"><span>Partida · presentación del compañero (inicio del Bloque 2)</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+      <div class="screen-body">
+        <ul class="elements">
+          <li>Al pasar al cuarto compañero, la presentación avisa que empieza el Bloque 2.</li>
+          <li>Menos rondas por compañero y estilos más difíciles, incluido uno que cambia a mitad del encuentro.</li>
+        </ul>
+        <div class="wf-canvas">
+          <div class="game-hud" data-wf-label="REGION · ENCABEZADO DE PARTIDA">
+            <span class="pill">Bloque 2 · Avanzado · Compañero 4 de 6</span>
+            <span class="btn">Pausar y salir al menú</span>
+          </div>
+          <div class="stage">
+            <div class="illus partner-illus" data-wf-label="ILUSTRACION · COMPAÑERO">ILUSTRACIÓN<br>EVA</div>
+            <div class="partner-name">Bloque 2 · Ahora juegas con Eva</div>
+            <div class="small muted">5 rondas · estilos más difíciles de descubrir; alguno puede cambiar a mitad del encuentro</div>
+            <div class="btn btn-primary" data-wf-label="BOTON · PRIMARIO">Empezar encuentro <kbd>Enter</kbd></div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-note"><strong>Propósito:</strong> que la dificultad suba de forma anunciada, no por sorpresa. <strong>Regla:</strong> el Bloque 1 siempre va primero; dentro de cada bloque el orden se sortea.</div>
+    </article>
   </div>
 
   <div class="row1">
@@ -953,44 +1011,44 @@
           <li>Centro limpio: el compañero, una pregunta y dos botones grandes. Nada más compite por la atención.</li>
           <li>Cooperar con <kbd>C</kbd> y Protegerme con <kbd>P</kbd>, o con clic. Sin límite de tiempo.</li>
           <li>A la derecha, el historial del encuentro (solo decisiones de cada ronda) y la tabla de puntos como referencia. No hay puntos acumulados.</li>
-          <li>Encabezado fijo: compañero, ronda con seis casillas y Pausar y salir al menú.</li>
+          <li>Encabezado fijo: bloque, compañero, ronda con sus casillas (seis en el Bloque 1, cinco en el Bloque 2) y Pausar y salir al menú.</li>
         </ul>
         <div class="wf-canvas">
           <div class="game-hud" data-wf-label="REGION · ENCABEZADO DE PARTIDA">
-            <span><span class="pill">Compañero 2 de 5 · Bruno</span></span>
+            <span><span class="pill">Bloque 1 · Compañero 1 de 6 · Clara</span></span>
             <span class="strong">Ronda 4 de 6 <span class="round-dots" aria-hidden="true"><span class="done"></span><span class="done"></span><span class="done"></span><span class="now"></span><span></span><span></span></span></span>
             <span class="btn">Pausar y salir al menú</span>
           </div>
           <div class="game-layout">
             <div class="stage" data-wf-label="REGION · ESCENARIO DE DECISION">
-              <div class="illus partner-illus" data-wf-label="ILUSTRACION · COMPAÑERO">ILUSTRACIÓN<br>BRUNO</div>
-              <div class="partner-name">Bruno</div>
+              <div class="illus partner-illus" data-wf-label="ILUSTRACION · COMPAÑERO">ILUSTRACIÓN<br>CLARA</div>
+              <div class="partner-name">Clara</div>
               <div class="question">¿Qué decides en esta ronda?</div>
               <div class="choice-row" data-wf-label="BOTONES · DECISION">
                 <div class="choice-btn"><span class="icon-marker">ICONO</span>Cooperar <kbd>C</kbd></div>
                 <div class="choice-btn"><span class="icon-marker">ICONO</span>Protegerme <kbd>P</kbd></div>
               </div>
-              <div class="small muted">Bruno elige al mismo tiempo que tú.</div>
+              <div class="small muted">Clara elige al mismo tiempo que tú.</div>
             </div>
             <div class="side">
-              <div class="region-box" data-wf-label="HISTORIAL · ENCUENTRO CON BRUNO">
-                <div class="history-row head"><span>R</span><span>Tú</span><span>Bruno</span></div>
-                <div class="history-row"><span class="mono">1</span><span>Cooperaste</span><span>Cooperó</span></div>
-                <div class="history-row"><span class="mono">2</span><span>Te protegiste</span><span>Cooperó</span></div>
-                <div class="history-row"><span class="mono">3</span><span>Cooperaste</span><span>Se protegió</span></div>
+              <div class="region-box" data-wf-label="HISTORIAL · ENCUENTRO CON CLARA">
+                <div class="history-row head"><span>R</span><span>Tú</span><span>Clara</span></div>
+                <div class="history-row"><span class="mono">1</span><span>Te protegiste</span><span>Cooperó</span></div>
+                <div class="history-row"><span class="mono">2</span><span>Cooperaste</span><span>Se protegió</span></div>
+                <div class="history-row"><span class="mono">3</span><span>Cooperaste</span><span>Cooperó</span></div>
                 <div class="history-row"><span class="mono">4</span><span class="strong">Ahora</span><span class="muted">—</span></div>
                 <div class="history-row"><span class="mono">5</span><span class="muted">—</span><span class="muted">—</span></div>
                 <div class="history-row"><span class="mono">6</span><span class="muted">—</span><span class="muted">—</span></div>
               </div>
               <div class="box" data-wf-label="TABLA · PUNTOS POR RONDA" style="padding-left:0; padding-right:0; padding-bottom:0;">
                 <table class="matrix">
-                  <thead><tr><th></th><th>Bruno coopera</th><th>Bruno se protege</th></tr></thead>
+                  <thead><tr><th></th><th>Clara coopera</th><th>Clara se protege</th></tr></thead>
                   <tbody>
                     <tr><th>Cooperas</th><td>3 · 3</td><td>0 · 5</td></tr>
                     <tr><th>Te proteges</th><td>5 · 0</td><td>1 · 1</td></tr>
                   </tbody>
                 </table>
-                <div class="small muted" style="padding:6px 8px;">Primero tus puntos, después los de Bruno.</div>
+                <div class="small muted" style="padding:6px 8px;">Primero tus puntos, después los de Clara.</div>
               </div>
             </div>
           </div>
@@ -1011,17 +1069,17 @@
         </ul>
         <div class="wf-canvas">
           <div class="game-hud" data-wf-label="REGION · ENCABEZADO DE PARTIDA">
-            <span><span class="pill">Compañero 2 de 5 · Bruno</span></span>
+            <span><span class="pill">Bloque 1 · Compañero 1 de 6 · Clara</span></span>
             <span class="strong">Ronda 4 de 6 <span class="round-dots" aria-hidden="true"><span class="done"></span><span class="done"></span><span class="done"></span><span class="done"></span><span></span><span></span></span></span>
             <span class="btn">Pausar y salir al menú</span>
           </div>
           <div class="game-layout">
             <div class="stage" data-wf-label="REGION · ESCENARIO DE DECISION">
-              <div class="illus partner-illus" style="height:120px;" data-wf-label="ILUSTRACION · COMPAÑERO">ILUSTRACIÓN<br>BRUNO</div>
+              <div class="illus partner-illus" style="height:120px;" data-wf-label="ILUSTRACION · COMPAÑERO">ILUSTRACIÓN<br>CLARA</div>
               <div class="reveal-row" data-wf-label="REGION · DECISIONES REVELADAS">
                 <div class="reveal-card"><div class="who">Tú</div><div class="what">Cooperaste</div><div class="pts">+3</div></div>
                 <div class="mono strong">y</div>
-                <div class="reveal-card"><div class="who">Bruno</div><div class="what">Cooperó</div><div class="pts">+3</div></div>
+                <div class="reveal-card"><div class="who">Clara</div><div class="what">Cooperó</div><div class="pts">+3</div></div>
               </div>
               <div class="result-banner kind-mutual" data-wf-label="AVISO · RESULTADO DE LA RONDA">
                 <strong>Ambos cooperaron.</strong> Cada uno suma 3 puntos en esta ronda.
@@ -1029,11 +1087,11 @@
               <div class="btn btn-primary" data-wf-label="BOTON · PRIMARIO">Siguiente ronda <kbd>Enter</kbd></div>
             </div>
             <div class="side">
-              <div class="region-box" data-wf-label="HISTORIAL · ENCUENTRO CON BRUNO">
-                <div class="history-row head"><span>R</span><span>Tú</span><span>Bruno</span></div>
-                <div class="history-row"><span class="mono">1</span><span>Cooperaste</span><span>Cooperó</span></div>
-                <div class="history-row"><span class="mono">2</span><span>Te protegiste</span><span>Cooperó</span></div>
-                <div class="history-row"><span class="mono">3</span><span>Cooperaste</span><span>Se protegió</span></div>
+              <div class="region-box" data-wf-label="HISTORIAL · ENCUENTRO CON CLARA">
+                <div class="history-row head"><span>R</span><span>Tú</span><span>Clara</span></div>
+                <div class="history-row"><span class="mono">1</span><span>Te protegiste</span><span>Cooperó</span></div>
+                <div class="history-row"><span class="mono">2</span><span>Cooperaste</span><span>Se protegió</span></div>
+                <div class="history-row"><span class="mono">3</span><span>Cooperaste</span><span>Cooperó</span></div>
                 <div class="history-row"><span class="mono">4</span><span class="strong">Cooperaste</span><span class="strong">Cooperó</span></div>
                 <div class="history-row"><span class="mono">5</span><span class="muted">—</span><span class="muted">—</span></div>
                 <div class="history-row"><span class="mono">6</span><span class="muted">—</span><span class="muted">—</span></div>
@@ -1118,30 +1176,31 @@
       <div class="screen-head"><span>Partida · ¿qué estilo tenía? (fin del encuentro)</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
       <div class="screen-body">
         <ul class="elements">
-          <li>Tras la ronda 6, el estudiante elige qué estilo cree que tenía el compañero.</li>
+          <li>Tras la última ronda del encuentro, el estudiante elige qué estilo cree que tenía el compañero entre los seis posibles.</li>
           <li>Hay que elegir una opción para seguir; No estoy seguro siempre vale.</li>
           <li>No se dice si acertó: eso llega en la retroalimentación.</li>
         </ul>
         <div class="wf-canvas">
           <div class="game-hud" data-wf-label="REGION · ENCABEZADO DE PARTIDA">
-            <span class="pill">Compañero 2 de 5 · Bruno · encuentro terminado</span>
+            <span class="pill">Bloque 1 · Compañero 2 de 6 · Bruno · encuentro terminado</span>
             <span class="btn">Pausar y salir al menú</span>
           </div>
           <div class="stage">
             <div class="question">¿Cómo crees que juega Bruno?</div>
             <div class="guess-grid" data-wf-label="OPCIONES · ESTILO SUPUESTO">
-              <div class="guess-opt is-selected"><strong>Recíproco</strong>Responde como lo trataste en la ronda anterior.</div>
-              <div class="guess-opt"><strong>Siempre coopera</strong>Coopera pase lo que pase.</div>
-              <div class="guess-opt"><strong>Siempre se protege</strong>Se protege pase lo que pase.</div>
-              <div class="guess-opt"><strong>Impredecible</strong>Cambia sin un patrón claro.</div>
+              <div class="guess-opt is-selected"><strong>Siempre coopera</strong>Coopera pase lo que pase.</div>
+              <div class="guess-opt"><strong>Recíproco</strong>Responde como lo trataste en la ronda anterior.</div>
+              <div class="guess-opt"><strong>Oportunista</strong>Suele cooperar, pero a veces se protege.</div>
               <div class="guess-opt"><strong>Rencoroso</strong>Coopera hasta que te proteges; luego ya no.</div>
-              <div class="guess-opt"><strong>No estoy seguro</strong>Prefiero no elegir un estilo.</div>
+              <div class="guess-opt"><strong>Impredecible</strong>Cambia sin un patrón claro.</div>
+              <div class="guess-opt"><strong>Cambiante</strong>Empieza de una forma y a mitad del encuentro cambia.</div>
+              <div class="guess-opt" style="grid-column:1 / -1;"><strong>No estoy seguro</strong>Prefiero no elegir un estilo.</div>
             </div>
             <div class="btn btn-primary" data-wf-label="BOTON · PRIMARIO">Siguiente compañero <kbd>Enter</kbd></div>
           </div>
         </div>
       </div>
-      <div class="screen-note"><strong>Propósito:</strong> convertir la observación en una hipótesis explícita. <strong>Registra:</strong> el estilo supuesto de cada compañero. <strong>Regla:</strong> tras el compañero 5 el botón dice Ver retroalimentación.</div>
+      <div class="screen-note"><strong>Propósito:</strong> convertir la observación en una hipótesis explícita. <strong>Registra:</strong> el estilo supuesto de cada compañero. <strong>Regla:</strong> tras el compañero 6 el botón lleva al Autorreporte final.</div>
     </article>
 
     <article class="screen">
@@ -1154,14 +1213,14 @@
         </ul>
         <div class="wf-canvas">
           <div class="game-hud">
-            <span class="pill">Compañero 3 de 5 · Clara</span>
+            <span class="pill">Bloque 1 · Compañero 3 de 6 · Alba</span>
             <span class="strong">Ronda 4 de 6</span>
             <span class="btn btn-primary" data-wf-label="BOTON · PAUSAR Y SALIR">Pausar y salir al menú</span>
           </div>
           <div class="arrow mono strong" style="text-align:center;">↓</div>
           <div class="box" data-wf-label="REGION · MENU EN FILA DE ICONOS · BOTONES CUADRADOS">
             <div class="menu-icon-row">
-              <div class="menu-icon-item"><div class="menu-icon-btn is-featured"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Continuar</span><span class="menu-icon-sub">Compañero 3 de 5<br>Ronda 4</span></div>
+              <div class="menu-icon-item"><div class="menu-icon-btn is-featured"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Continuar</span><span class="menu-icon-sub">Compañero 3 de 6<br>Ronda 4</span></div>
               <div class="menu-icon-item"><div class="menu-icon-btn"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Jugar</span></div>
               <div class="menu-icon-item"><div class="menu-icon-btn"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Ver avance</span></div>
               <div class="menu-icon-item"><div class="menu-icon-btn"><span class="icon-marker">ICONO</span></div><span class="menu-icon-label">Ajustes</span></div>
@@ -1177,8 +1236,68 @@
   <div class="section-title">5 · Retroalimentación y cierre</div>
   <div class="flow">
     <div class="step">Último estilo supuesto</div><div class="arrow">→</div>
+    <div class="step">Autorreporte final</div><div class="arrow">→</div>
     <div class="step">Retroalimentación de la partida</div><div class="arrow">→</div>
     <div class="step">Menú principal o Jugar otra partida</div>
+  </div>
+
+  <div class="row2">
+    <article class="screen">
+      <div class="screen-head"><span>Autorreporte final</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+      <div class="screen-body">
+        <ul class="elements">
+          <li>Tras el sexto encuentro: las mismas dos escalas del inicio.</li>
+          <li>Ver retroalimentación se habilita al responder ambas y marca la partida como completada.</li>
+        </ul>
+        <div class="wf-canvas">
+          <div class="strong">Terminaste la partida. ¿Cómo te sientes ahora?</div>
+          <div class="region-box" data-wf-label="ESCALA 1-5">
+            <div class="strong" style="font-size:0.82rem;">Estado de ánimo</div>
+            <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin:6px 0 4px;"><div class="btn">1</div><div class="btn">2</div><div class="btn">3</div><div class="btn btn-primary">4</div><div class="btn">5</div></div>
+            <div class="top-nav-row small muted"><span>1 · Muy bajo</span><span>5 · Muy bueno</span></div>
+          </div>
+          <div class="region-box" data-wf-label="ESCALA 1-5">
+            <div class="strong" style="font-size:0.82rem;">Nivel de estrés o frustración</div>
+            <div style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; margin:6px 0 4px;"><div class="btn">1</div><div class="btn btn-primary">2</div><div class="btn">3</div><div class="btn">4</div><div class="btn">5</div></div>
+            <div class="top-nav-row small muted"><span>1 · Muy tranquilo</span><span>5 · Muy tenso</span></div>
+          </div>
+          <div class="actions-row">
+            <span class="mono small muted">Se guarda en esta PC, por perfil</span>
+            <span class="btn btn-primary" data-wf-label="BOTON · PRIMARIO">Ver retroalimentación <kbd>Enter</kbd></span>
+          </div>
+        </div>
+      </div>
+      <div class="screen-note"><strong>Propósito:</strong> cerrar la partida comparando cómo se sentía antes y después. <strong>Registra:</strong> ánimo y estrés finales.</div>
+    </article>
+
+    <article class="screen">
+      <div class="screen-head"><span>Retomar partida · reapertura</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
+      <div class="screen-body">
+        <ul class="elements">
+          <li>Si la app se cerró a mitad de la partida, el autorreporte inicial, cada ronda resuelta y cada estilo supuesto ya estaban guardados.</li>
+          <li>Al reabrir: Pantalla de carga, Selección de perfil y Menú principal con Continuar.</li>
+          <li>Se retoma en la siguiente ronda sin jugar; si se cerró tras la última ronda del encuentro, en ¿Qué estilo tenía?; si aún no empezaba el encuentro, en la presentación del compañero; si ya cerró los seis encuentros, en el Autorreporte final.</li>
+        </ul>
+        <div class="wf-canvas">
+          <div class="note-zone" data-wf-label="AVANCE GUARDADO · ESTA PC">Partida a medias · compañero 3 de 6 (Alba) · 3 rondas jugadas con ella</div>
+          <div class="flow" style="margin:0;">
+            <div class="step">Carga</div><div class="arrow">→</div>
+            <div class="step">Perfil</div><div class="arrow">→</div>
+            <div class="step">Menú · Continuar</div><div class="arrow">→</div>
+            <div class="step">Decisión · ronda 4</div>
+          </div>
+          <div class="stage" style="padding:14px;">
+            <div class="small muted">Bloque 1 · Compañero 3 de 6 · Alba · Ronda 4 de 6</div>
+            <div class="question">¿Qué decides en esta ronda?</div>
+            <div class="choice-row">
+              <div class="choice-btn" style="min-height:56px;">Cooperar <kbd>C</kbd></div>
+              <div class="choice-btn" style="min-height:56px;">Protegerme <kbd>P</kbd></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="screen-note"><strong>Propósito:</strong> continuidad ante interrupciones en el aula. <strong>Regla:</strong> el compañero conserva su estilo y, si es impredecible, sus mismas decisiones.</div>
+    </article>
   </div>
 
   <div class="row1">
@@ -1186,41 +1305,45 @@
       <div class="screen-head"><span>Retroalimentación de la partida</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
       <div class="screen-body">
         <ul class="elements">
-          <li>Cuatro tarjetas: puntaje individual, puntaje grupal con su máximo, nivel de cooperación y respuesta ante una traición.</li>
-          <li>Tres mensajes formativos que describen lo que pasó y qué observar la próxima vez; nunca califican a la persona.</li>
-          <li>Tabla por compañero con el estilo revelado y el supuesto; detalle por ronda desplegable.</li>
+          <li>Cinco tarjetas: puntaje individual, puntaje grupal con su máximo, nivel de cooperación, confianza con quien coopera y respuesta ante una traición; debajo, estilos identificados y el autorreporte inicial y final.</li>
+          <li>Cuatro mensajes formativos que describen lo que pasó y qué observar la próxima vez; nunca califican a la persona ni interpretan el autorreporte.</li>
+          <li>Tabla por compañero con su bloque, el estilo revelado y el supuesto; detalle por ronda desplegable.</li>
         </ul>
         <div class="wf-canvas">
           <div class="top-nav-row">
             <span class="strong" style="font-size:1rem;">Así fue tu partida</span>
             <span class="pill">Datos simulados</span>
           </div>
-          <div class="metrics-grid" data-wf-label="REGION · METRICAS">
-            <div class="metric-card"><div class="metric-label">Puntaje individual</div><div class="metric-value">68</div><div class="metric-sub">de 150 posibles</div></div>
-            <div class="metric-card"><div class="metric-label">Puntaje grupal</div><div class="metric-value">141 / 180</div><div class="metric-sub">tú y tus compañeros juntos</div></div>
-            <div class="metric-card"><div class="metric-label">Nivel de cooperación</div><div class="metric-value">63 %</div><div class="metric-sub">cooperaste en 19 de 30 rondas</div></div>
-            <div class="metric-card"><div class="metric-label">Respuesta ante una traición</div><div class="metric-value">2 de 4</div><div class="metric-sub">veces volviste a cooperar en la ronda siguiente</div></div>
+          <div class="metrics-grid" style="grid-template-columns:repeat(5, minmax(0,1fr));" data-wf-label="REGION · METRICAS">
+            <div class="metric-card"><div class="metric-label">Puntaje individual</div><div class="metric-value">79</div><div class="metric-sub">de 165 posibles</div></div>
+            <div class="metric-card"><div class="metric-label">Puntaje grupal</div><div class="metric-value">165 / 198</div><div class="metric-sub">tú y tus compañeros juntos</div></div>
+            <div class="metric-card"><div class="metric-label">Nivel de cooperación</div><div class="metric-value">73 %</div><div class="metric-sub">cooperaste en 24 de 33 rondas</div></div>
+            <div class="metric-card"><div class="metric-label">Confianza con quien coopera</div><div class="metric-value">92 %</div><div class="metric-sub">cooperaste en 11 de 12 rondas con Bruno y Clara</div></div>
+            <div class="metric-card"><div class="metric-label">Respuesta ante una traición</div><div class="metric-value">2 de 5</div><div class="metric-sub">veces volviste a cooperar en la ronda siguiente</div></div>
           </div>
+          <div class="note-zone" data-wf-label="AUTORREPORTE · INICIO Y FINAL">Estado de ánimo: 3 → 4 · Estrés o frustración: 3 → 2 · Estilos identificados: 4 de 6</div>
           <div style="display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.3fr); gap:14px;">
             <div class="box" data-wf-label="TARJETA · MENSAJES FORMATIVOS">
               <ol class="msg-list">
-                <li>Cooperaste en buena parte de las rondas. Mira en la tabla con qué compañeros eso sumó puntos para ambos y con cuáles no fue correspondido.</li>
-                <li>Después de una traición, la mitad de las veces volviste a cooperar y la otra mitad te protegiste. Observa qué respuesta cambió la conducta de cada compañero.</li>
-                <li>Con Alba, que siempre se protegía, cooperaste menos que con Bruno y Clara: ajustaste tu conducta a cómo jugaba cada uno.</li>
+                <li>Cooperaste en la mayoría de las rondas. Mira en la tabla con qué compañeros eso sumó puntos para ambos y con cuáles no fue correspondido.</li>
+                <li>Con Bruno y Clara, que respondían a la cooperación, la sostuviste casi siempre: así el grupo sumó más puntos.</li>
+                <li>Después de una traición, volviste a cooperar 2 de 5 veces y te protegiste las demás. Observa qué respuesta cambió la conducta de cada compañero.</li>
+                <li>Con Fabián cooperaste en las dos primeras rondas y te protegiste en las últimas: notaste que cambió a mitad del encuentro.</li>
               </ol>
             </div>
             <div class="box" data-wf-label="TABLA · POR COMPAÑERO" style="padding-left:0; padding-right:0; padding-bottom:0;">
               <table>
-                <thead><tr><th>Compañero</th><th>Su estilo</th><th>Tú supusiste</th><th>Cooperaste</th><th>Tú</th><th>Él o ella</th></tr></thead>
+                <thead><tr><th>Bloque</th><th>Compañero</th><th>Su estilo</th><th>Tú supusiste</th><th>Cooperaste</th><th>Tú</th><th>Él o ella</th></tr></thead>
                 <tbody>
-                  <tr><td>Clara</td><td>Recíproco</td><td><span class="tag tag-dark">Recíproco · coincide</span></td><td class="mono">5 de 6</td><td class="mono">17</td><td class="mono">17</td></tr>
-                  <tr><td>Alba</td><td>Siempre se protege</td><td><span class="tag tag-dark">Siempre se protege · coincide</span></td><td class="mono">2 de 6</td><td class="mono">4</td><td class="mono">14</td></tr>
-                  <tr><td>Eva</td><td>Impredecible</td><td><span class="tag tag-double">Rencoroso · no coincide</span></td><td class="mono">3 de 6</td><td class="mono">13</td><td class="mono">13</td></tr>
-                  <tr><td>Bruno</td><td>Siempre coopera</td><td><span class="tag tag-dark">Siempre coopera · coincide</span></td><td class="mono">6 de 6</td><td class="mono">18</td><td class="mono">18</td></tr>
-                  <tr><td>Darío</td><td>Rencoroso</td><td><span class="tag tag-grey">No estoy seguro</span></td><td class="mono">3 de 6</td><td class="mono">16</td><td class="mono">11</td></tr>
-                </tbody>
+<tr><td class="mono">1</td><td>Clara</td><td>Recíproco</td><td><span class="tag tag-dark">Recíproco · coincide</span></td><td class="mono">5 de 6</td><td class="mono">17</td><td class="mono">17</td></tr>
+<tr><td class="mono">1</td><td>Bruno</td><td>Siempre coopera</td><td><span class="tag tag-dark">Siempre coopera · coincide</span></td><td class="mono">6 de 6</td><td class="mono">18</td><td class="mono">18</td></tr>
+<tr><td class="mono">1</td><td>Alba</td><td>Oportunista</td><td><span class="tag tag-double">Impredecible · no coincide</span></td><td class="mono">5 de 6</td><td class="mono">14</td><td class="mono">19</td></tr>
+<tr><td class="mono">2</td><td>Eva</td><td>Impredecible</td><td><span class="tag tag-grey">No estoy seguro</span></td><td class="mono">3 de 5</td><td class="mono">9</td><td class="mono">11</td></tr>
+<tr><td class="mono">2</td><td>Darío</td><td>Rencoroso</td><td><span class="tag tag-dark">Rencoroso · coincide</span></td><td class="mono">2 de 5</td><td class="mono">13</td><td class="mono">8</td></tr>
+<tr><td class="mono">2</td><td>Fabián</td><td>Cambiante</td><td><span class="tag tag-dark">Cambiante · coincide</span></td><td class="mono">3 de 5</td><td class="mono">8</td><td class="mono">13</td></tr>
+</tbody>
               </table>
-              <div class="small muted" style="padding:6px 8px;">Estilos descubiertos: 3 de 5 · Ver detalle por ronda ▾</div>
+              <div class="small muted" style="padding:6px 8px;">Estilos identificados: 4 de 6 · Ver detalle por ronda ▾</div>
             </div>
           </div>
           <div class="actions-row">
@@ -1243,7 +1366,7 @@
         </ul>
         <div class="wf-canvas">
           <div class="metrics-grid" style="grid-template-columns:repeat(2, minmax(0,1fr));" data-wf-label="REGION · METRICAS">
-            <div class="metric-card"><div class="metric-label">Nivel de cooperación</div><div class="metric-value">20 %</div><div class="metric-sub">cooperaste en 6 de 30 rondas</div></div>
+            <div class="metric-card"><div class="metric-label">Nivel de cooperación</div><div class="metric-value">21 %</div><div class="metric-sub">cooperaste en 7 de 33 rondas</div></div>
             <div class="metric-card"><div class="metric-label">Respuesta ante una traición</div><div class="metric-value">—</div><div class="metric-sub">No hubo traiciones con respuesta en esta partida.</div></div>
           </div>
           <div class="box" data-wf-label="TARJETA · MENSAJE FORMATIVO" style="font-size:0.82rem;">Te protegiste en la mayoría de las rondas. Observa con qué compañeros cooperar habría sumado más puntos para ambos.</div>
@@ -1252,38 +1375,10 @@
       <div class="screen-note"><strong>Propósito:</strong> cubrir el caso sin datos sin forzar una conclusión. <strong>Regla:</strong> los mensajes se eligen de un catálogo fijo según reglas.</div>
     </article>
 
-    <article class="screen">
-      <div class="screen-head"><span>Retomar partida · reapertura</span><span class="dots" aria-hidden="true"><span></span><span></span><span></span></span></div>
-      <div class="screen-body">
-        <ul class="elements">
-          <li>Si la app se cerró a mitad de la partida, cada ronda resuelta y cada estilo supuesto ya estaban guardados.</li>
-          <li>Al reabrir: Pantalla de carga, Selección de perfil y Menú principal con Continuar.</li>
-          <li>Se retoma en la siguiente ronda sin jugar; si se cerró tras la ronda 6, en ¿Qué estilo tenía?; si aún no empezaba el encuentro, en la presentación del compañero.</li>
-        </ul>
-        <div class="wf-canvas">
-          <div class="note-zone" data-wf-label="AVANCE GUARDADO · ESTA PC">Partida a medias · compañero 3 de 5 (Clara) · 3 rondas jugadas con ella</div>
-          <div class="flow" style="margin:0;">
-            <div class="step">Carga</div><div class="arrow">→</div>
-            <div class="step">Perfil</div><div class="arrow">→</div>
-            <div class="step">Menú · Continuar</div><div class="arrow">→</div>
-            <div class="step">Decisión · ronda 4</div>
-          </div>
-          <div class="stage" style="padding:14px;">
-            <div class="small muted">Compañero 3 de 5 · Clara · Ronda 4 de 6</div>
-            <div class="question">¿Qué decides en esta ronda?</div>
-            <div class="choice-row">
-              <div class="choice-btn" style="min-height:56px;">Cooperar <kbd>C</kbd></div>
-              <div class="choice-btn" style="min-height:56px;">Protegerme <kbd>P</kbd></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="screen-note"><strong>Propósito:</strong> continuidad ante interrupciones en el aula. <strong>Regla:</strong> el compañero conserva su estilo y, si es impredecible, sus mismas decisiones.</div>
-    </article>
   </div>
 
   <div class="legend">
-    <strong>Cómo funciona (resumen del flujo completo):</strong> al abrir la app, la Pantalla de carga lee los perfiles guardados en esta PC y pasa a Selección de perfil, donde cada estudiante ingresa o crea su perfil (eliminar pide confirmación). En el Menú principal, una fila de botones cuadrados ofrece Continuar (solo si hay una partida a medias), Jugar, Ver avance y Ajustes. La primera vez, Jugar abre la Guía rápida de tres pasos; si ya hay una partida a medias, pide confirmar antes de descartarla. Una partida tiene cinco encuentros, uno con cada compañero, en orden sorteado: se presenta al compañero, se juegan seis rondas en la pantalla central (decidir Cooperar o Protegerme y ver de inmediato el resultado de la ronda, con el historial del encuentro al lado) y al final se elige qué estilo parecía tener. Cada ronda y cada estilo supuesto quedan guardados, así que se puede pausar o cerrar y retomar en el mismo punto. Al terminar el quinto encuentro llega la Retroalimentación: puntaje individual y grupal, nivel de cooperación, respuesta ante una traición, los estilos revelados y tres mensajes formativos que describen decisiones sin juzgar a la persona. Ver avance guarda el historial por perfil y Ajustes cambia sonido, volumen, alto contraste, tamaño de texto y movimiento al instante. <strong>Marcas:</strong> todo componente con borde normal es interfaz del diseñador, incluidas las ilustraciones de los compañeros. Este tablero no tiene zona rayada porque en TrustLoop el programa no dibuja ninguna escena, tablero ni lienzo: el equipo de programación arma las pantallas del diseñador y pone el comportamiento de los compañeros, los puntos, el guardado y los textos.
+    <strong>Cómo funciona (resumen del flujo completo):</strong> al abrir la app, la Pantalla de carga lee los perfiles guardados en esta PC y pasa a Selección de perfil, donde cada estudiante ingresa o crea su perfil (eliminar pide confirmación). En el Menú principal, una fila de botones cuadrados ofrece Continuar (solo si hay una partida a medias), Jugar, Ver avance y Ajustes. La primera vez, Jugar abre la Guía rápida de tres pasos; si ya hay una partida a medias, pide confirmar antes de descartarla. Cada partida empieza con el Autorreporte inicial (estado de ánimo y estrés o frustración, del 1 al 5) y sigue con seis encuentros en dos bloques: el Bloque 1 con tres compañeros y seis rondas cada uno, y el Bloque 2 con otros tres, cinco rondas y estilos más difíciles, incluido uno que cambia a mitad del encuentro. En cada encuentro se presenta al compañero, se juegan las rondas en la pantalla central (decidir Cooperar o Protegerme y ver de inmediato el resultado de la ronda, con el historial del encuentro al lado) y al final se elige qué estilo parecía tener. Los autorreportes, cada ronda y cada estilo supuesto quedan guardados, así que se puede pausar o cerrar y retomar en el mismo punto. Tras el sexto encuentro se responde el Autorreporte final y llega la Retroalimentación: puntaje individual y grupal, nivel de cooperación, confianza con quien coopera, respuesta ante una traición, estilos identificados, el autorreporte inicial y final, y cuatro mensajes formativos que describen decisiones sin juzgar a la persona. No hay exportación: todo se revisa en pantalla junto al docente. Ver avance guarda el historial por perfil y Ajustes cambia sonido, volumen, alto contraste, tamaño de texto y movimiento al instante. <strong>Marcas:</strong> todo componente con borde normal es interfaz del diseñador, incluidas las ilustraciones de los compañeros. Este tablero no tiene zona rayada porque en TrustLoop el programa no dibuja ninguna escena, tablero ni lienzo: el equipo de programación arma las pantallas del diseñador y pone el comportamiento de los compañeros, los puntos, el guardado y los textos.
   </div>
 
 </div>
