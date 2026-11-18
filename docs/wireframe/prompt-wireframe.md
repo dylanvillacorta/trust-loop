@@ -44,14 +44,15 @@ ESTRUCTURA DEL TABLERO (de arriba a abajo)
    - Punto de contacto: como se juntan las dos partes (por ejemplo, mostrarle al diseñador una captura de la escena antes de que cierre los colores).
    - Una muestra de las dos marcas: una caja con borde normal rotulada INTERFAZ · DISEÑADOR y una caja rayada con borde discontinuo rotulada ZONA <nombre> · EQUIPO DE PROGRAMACIÓN.
    Si las tarjetas tienen alturas muy distintas, pon las dos primeras lado a lado y el punto de contacto debajo, a todo el ancho.
+   Cierra el bloque una cuarta tarjeta, Marco de la ventana · igual en todas las pantallas: la ventana vacia con sus tres regiones rotuladas (REGION · BARRA SUPERIOR, REGION · AREA CENTRAL, REGION · BARRA DE ACCIONES) y el lugar de la accion principal, con una lista breve que explique la regla del marco fijo.
 3. Bloques numerados (1 · ACCESO Y PERFIL, 2 · CONFIGURACIÓN Y AVANCE, etc.). Cada bloque tiene:
    - Un titulo de seccion con una linea gruesa debajo.
    - Una tira de flujo: cajas con el nombre de cada paso, unidas con flechas.
    - Una grilla de tarjetas de pantalla. Cada tarjeta tiene:
-     a. Cabecera con el nombre de la pantalla en mayusculas pequeñas y tres circulos a la derecha.
-     b. Lista breve de elementos y comportamientos.
-     c. Esquema de la pantalla con sus componentes.
-     d. Nota final con Propósito: y, segun aplique, Regla:, Registra: o Muestra:.
+     a. Cabecera con el nombre de la pantalla en mayusculas pequeñas y tres circulos a la derecha (y, si corresponde, la marca de datos simulados).
+     b. Esquema de la pantalla dentro del marco de ventana fijo (ver MARCO DE VENTANA).
+     c. Lista breve de elementos y comportamientos, fuera del marco.
+     d. Nota final con Propósito: y, segun aplique, Regla:, Registra: o Muestra:, fuera del marco.
    Los estados importantes van en tarjetas propias: dialogos, primera vez, sesion a medias, casos de resultado.
 4. Al final, una leyenda Cómo funciona (resumen del flujo completo): un parrafo que recorre todo el flujo y explica las marcas (que significa la zona rayada).
 
@@ -75,7 +76,21 @@ LENGUAJE VISUAL (no negociable)
 - Si un color es parte del contenido (por ejemplo el color de una pieza), se indica con una etiqueta de texto: ROJO, AZUL.
 - Iconos: cajas de marcador con la palabra ICONO. Logo: caja LOGO · PENDIENTE con el nombre en texto. Sin emojis.
 - Los datos de ejemplo son ficticios y van marcados como simulados.
-- Ancho de referencia: 1280 a 1920 px. Grilla de 2 o 3 tarjetas por fila, sin scroll horizontal.
+- Ancho de referencia: 1280 a 1920 px. Grilla de 1 o 2 tarjetas de pantalla por fila, sin scroll horizontal.
+
+MARCO DE VENTANA (no negociable)
+El software tiene una pantalla real de tamaño fijo (una ventana de escritorio, una pantalla de movil, una tableta). En el wireframe cada pantalla y cada estado se dibuja dentro de un marco identico, para que el tablero se lea como esa misma pantalla cambiando de contenido.
+- Proporcion fija, la de la pantalla real del software, aplicada con aspect-ratio en el CSS. Por ejemplo 16:10, con 1280 x 800 como referencia, para una app de escritorio.
+- Todos los marcos tienen el mismo ancho y el mismo alto en la pagina, en todos los bloques. Usa una sola rejilla para todas las pantallas: 1 o 2 marcos por fila, del mismo tamaño en cualquier ancho de referencia.
+- El contenido nunca agranda ni achica el marco: el marco no toma la altura de su contenido. Si algo no cabe, se simplifica, se reparte en columnas o se separa en otra tarjeta de estado.
+- Regiones constantes, en la misma posicion en todas las pantallas que las usen:
+  - Barra superior: a la izquierda Volver, Cambiar usuario, Menu o Pausa; al centro el titulo de la pantalla o el estado de la sesion; a la derecha un estado o un indicador.
+  - Area central: el contenido propio de cada pantalla.
+  - Barra inferior de acciones: la accion principal siempre en el mismo sitio (por ejemplo, abajo a la derecha); a la izquierda, acciones secundarias o ayudas de teclas.
+  Las pantallas sin barras (por ejemplo la pantalla de carga) igual ocupan el marco completo.
+- Dialogos, pausas y avisos modales se dibujan encima de la pantalla de fondo, atenuada con un velo gris, dentro del mismo marco; nunca como una tarjeta de otro tamaño.
+- Las listas de elementos, notas, anotaciones del tablero y marcas de datos simulados quedan FUERA del marco (al lado o debajo), con altura libre. Dentro del marco solo va lo que el usuario ve en la pantalla.
+- En la pantalla central del software (por ejemplo la de juego o de trabajo), cada zona tiene un lugar fijo que no se mueve entre estados: lo principal grande y al centro, la retroalimentacion siempre visible en una franja de altura fija y los botones de respuesta en la misma posicion.
 
 PROHIBIDO EN EL WIREFRAME
 - Decisiones de diseño visual: paleta, fuentes de marca, estilo final. Eso lo decide el diseñador despues.
@@ -146,6 +161,12 @@ FASE 3 · VERIFICAR (antes de entregar)
   - ningun rotulo se superpone ni se corta;
   - el menu queda en una sola fila;
   - los bordes de cada boton, campo y tarjeta se ven claramente.
+- Marco de ventana: con un script externo (navegador sin interfaz o una herramienta de pruebas de navegador, sin modificar el archivo), mide a 1280 y a 1920 px de ancho todos los marcos de ventana y confirma que:
+  - todos tienen el mismo ancho y el mismo alto (tolerancia de 1 px) y la proporcion fija;
+  - ningun contenido desborda el marco ni sus regiones (alto y ancho de desplazamiento menores o iguales al alto y ancho visibles, y ningun elemento fuera del rectangulo del marco);
+  - las barras superior e inferior estan en la misma posicion en todas las pantallas que las usan y la accion principal siempre en el mismo sitio;
+  - los dialogos estan dentro del marco, sobre la pantalla atenuada, y las notas y listas fuera de el.
+  Guarda capturas de pagina completa en una carpeta temporal fuera del repositorio y revisalas.
 - Si alguna verificacion falla, corrigela antes de entregar.
 
 ==================================================
